@@ -1,68 +1,990 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LensaKita Studio — jasa fotografi profesional untuk mengabadikan momen berharga Anda.">
-  <title>LensaKita Studio | Fotografi Profesional</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://images.unsplash.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LensaKita Studio | Jasa Fotografi Profesional</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="navbar" id="navbar">
-    <a class="brand" href="#beranda"><span class="brand-icon">▣</span><span><strong>LensaKita</strong><small>Photography Studio</small></span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
-    <nav class="nav-links" id="navLinks">
-      <a href="#beranda">Beranda</a><a href="#layanan">Layanan</a><a href="#portofolio">Portofolio</a><a href="#tentang">Tentang</a><a href="#kontak">Kontak</a>
-      <a class="btn btn-small" href="#kontak">Pesan Sekarang</a>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-camera-fill"></i>
+                LensaKita
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#layanan">Layanan</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#harga">Harga</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="#kontak" class="btn btn-gold">
+                            Pesan Sekarang
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero" id="beranda">
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow">ABADIKAN MOMEN BERHARGA</p>
-        <h1>Fotografi Profesional<br>untuk <span>Setiap Cerita</span></h1>
-        <p class="hero-copy">Kami membantu Anda mengabadikan momen spesial dengan hasil foto berkualitas dan penuh makna.</p>
-        <div class="hero-actions"><a class="btn" href="#kontak">Pesan Sekarang <span>→</span></a><a class="text-link" href="#portofolio"><span class="play">▶</span> Lihat Portofolio</a></div>
-      </div>
-      <div class="hero-caption">MENCERITAKAN KISAH MELALUI LENSA</div>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero-section">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <span class="hero-badge">
+                        <i class="bi bi-stars"></i>
+                        Fotografi Profesional
+                    </span>
+
+                    <h1>
+                        Abadikan Setiap
+                        <span>Momen Berharga</span>
+                    </h1>
+
+                    <p>
+                        LensaKita Studio membantu mengabadikan momen
+                        penting dalam hidup Anda melalui foto yang
+                        berkualitas, natural, dan penuh cerita.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#harga" class="btn btn-gold btn-lg">
+                            Lihat Paket
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <a href="#galeri" class="btn btn-outline-light btn-lg">
+                            Lihat Galeri
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
-    <section class="section services" id="layanan">
-      <div class="section-heading"><p class="eyebrow">APA YANG KAMI TAWARKAN</p><h2>Layanan Kami</h2><p>Kami menyediakan berbagai layanan fotografi sesuai kebutuhan Anda.</p></div>
-      <div class="service-grid">
-        <article class="service-card"><div class="service-icon">▧</div><h3>Fotografi Event</h3><p>Dokumentasi acara pernikahan, wisuda, seminar, dan berbagai momen penting lainnya.</p><a href="#kontak">Selengkapnya <span>→</span></a></article>
-        <article class="service-card"><div class="service-icon">♙</div><h3>Fotografi Potret</h3><p>Abadikan kepribadian dan cerita Anda melalui sesi foto yang natural dan profesional.</p><a href="#kontak">Selengkapnya <span>→</span></a></article>
-        <article class="service-card"><div class="service-icon">◇</div><h3>Fotografi Produk</h3><p>Tampilkan produk bisnis Anda dengan foto yang menarik, detail, dan berkualitas.</p><a href="#kontak">Selengkapnya <span>→</span></a></article>
-        <article class="service-card"><div class="service-icon">▱</div><h3>Alam & Wisata</h3><p>Jelajahi keindahan alam dan abadikan perjalanan dengan hasil foto yang memukau.</p><a href="#kontak">Selengkapnya <span>→</span></a></article>
-      </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about-section section-padding">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="about-image">
+                        <img
+                            src="assets/images/potrait.jpg"
+                            alt="Fotografer LensaKita"
+                            class="img-fluid"
+                        >
+
+                        <div class="experience-box">
+                            <strong>5+</strong>
+                            <span>Tahun Pengalaman</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <span class="section-label">TENTANG KAMI</span>
+
+                    <h2>
+                        Foto yang bukan hanya indah,
+                        tapi juga <span>bercerita.</span>
+                    </h2>
+
+                    <p>
+                        LensaKita Studio adalah UMKM yang bergerak di bidang
+                        jasa fotografi dan dokumentasi. Kami percaya bahwa
+                        setiap momen memiliki cerita yang layak untuk dikenang.
+                    </p>
+
+                    <p>
+                        Dengan pendekatan fotografi yang natural dan kreatif,
+                        kami berusaha menghasilkan foto yang terasa hidup
+                        dan sesuai dengan karakter setiap pelanggan.
+                    </p>
+
+                    <div class="row mt-4">
+
+                        <div class="col-6">
+                            <div class="about-feature">
+                                <i class="bi bi-camera"></i>
+                                <div>
+                                    <h5>Peralatan Profesional</h5>
+                                    <p>Kualitas foto tajam dan detail.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="about-feature">
+                                <i class="bi bi-heart"></i>
+                                <div>
+                                    <h5>Pelayanan Ramah</h5>
+                                    <p>Nyaman selama sesi foto.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="about section" id="tentang">
-      <div class="about-copy"><p class="eyebrow">CERITA DI BALIK LENSA</p><h2>Setiap Momen<br>Punya Cerita.</h2><p>LensaKita adalah UMKM fotografi yang percaya bahwa setiap momen memiliki cerita berharga. Kami hadir untuk menangkap momen secara jujur, kreatif, dan penuh rasa.</p><p>Dengan perhatian pada detail dan pendekatan yang personal, kami ingin setiap foto menjadi kenangan yang bisa Anda simpan selamanya.</p><a class="btn btn-outline" href="#kontak">Kenali Kami <span>→</span></a></div>
-      <div class="about-images"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=85" alt="Kamera profesional"><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=85" alt="Pemandangan alam"></div>
+
+    <!-- ================= LAYANAN ================= -->
+    <section id="layanan" class="services-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-label">LAYANAN KAMI</span>
+
+                <h2>
+                    Pilihan Fotografi
+                    <span>Untuk Setiap Momen</span>
+                </h2>
+
+                <p>
+                    Kami menyediakan berbagai layanan fotografi
+                    sesuai kebutuhan Anda.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4 mt-4">
+
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img
+                                src="assets/images/hero.jpg"
+                                alt="Fotografi Pernikahan"
+                            >
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+
+                            <h4>Wedding</h4>
+
+                            <p>
+                                Dokumentasikan hari bahagia
+                                Anda dengan penuh cerita.
+                            </p>
+
+                            <a href="#kontak">
+                                Selengkapnya
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img
+                                src="assets/images/potrait.jpg"
+                                alt="Fotografi Portrait"
+                            >
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-person-fill"></i>
+                            </div>
+
+                            <h4>Portrait</h4>
+
+                            <p>
+                                Foto personal dengan konsep
+                                yang sesuai karakter Anda.
+                            </p>
+
+                            <a href="#kontak">
+                                Selengkapnya
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img
+                                src="assets/images/product.jpg"
+                                alt="Fotografi Produk"
+                            >
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-box-seam-fill"></i>
+                            </div>
+
+                            <h4>Product</h4>
+
+                            <p>
+                                Tingkatkan daya tarik produk
+                                melalui foto profesional.
+                            </p>
+
+                            <a href="#kontak">
+                                Selengkapnya
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="service-card">
+
+                        <div class="service-image">
+                            <img
+                                src="assets/images/event.jpg"
+                                alt="Dokumentasi Event"
+                            >
+                        </div>
+
+                        <div class="service-content">
+
+                            <div class="service-icon">
+                                <i class="bi bi-calendar-event-fill"></i>
+                            </div>
+
+                            <h4>Event</h4>
+
+                            <p>
+                                Dokumentasikan acara Anda
+                                secara lengkap dan profesional.
+                            </p>
+
+                            <a href="#kontak">
+                                Selengkapnya
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="section portfolio" id="portofolio">
-      <div class="section-heading heading-row"><div><p class="eyebrow">KARYA PILIHAN</p><h2>Portofolio</h2><p>Beberapa cerita yang berhasil kami abadikan.</p></div><a class="text-link dark-link" href="#kontak">Diskusikan proyek Anda →</a></div>
-      <div class="portfolio-grid">
-        <figure><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=85" alt="Fotografi pasangan"><figcaption><strong>Wedding Moments</strong><span>Wedding</span></figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Potret perempuan"><figcaption><strong>Personal Portrait</strong><span>Portrait</span></figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Pemandangan pegunungan"><figcaption><strong>Nature Escape</strong><span>Landscape</span></figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Fotografi produk"><figcaption><strong>Product Story</strong><span>Product</span></figcaption></figure>
-      </div>
+
+    <!-- ================= GALERI ================= -->
+    <section id="galeri" class="gallery-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-label">PORTOFOLIO</span>
+
+                <h2>
+                    Cerita Dalam
+                    <span>Satu Frame</span>
+                </h2>
+
+                <p>
+                    Beberapa hasil karya LensaKita Studio.
+                </p>
+
+            </div>
+
+
+            <div class="row g-3 mt-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/1.jpg" alt="Portfolio 1">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/2.jpg" alt="Portfolio 2">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/3.jpg" alt="Portfolio 3">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/4.jpg" alt="Portfolio 4">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/5.jpg" alt="Portfolio 5">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/6.jpg" alt="Portfolio 6">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="section testimonials">
-      <div class="section-heading"><p class="eyebrow">KATA PELANGGAN</p><h2>Cerita Mereka</h2><p>Kepercayaan Anda adalah bagian dari cerita kami.</p></div>
-      <div class="testimonial-grid"><blockquote><div class="stars">★★★★★</div><p>“Hasil fotonya sangat memuaskan, fotografernya ramah dan profesional. Momen acara keluarga kami jadi terabadikan dengan indah.”</p><footer><strong>Dewi Lestari</strong><span>Pelanggan Fotografi Event</span></footer></blockquote><blockquote><div class="stars">★★★★★</div><p>“Fotografi produk jadi terlihat jauh lebih menarik. Komunikasinya mudah dan hasilnya sesuai dengan konsep yang kami inginkan.”</p><footer><strong>Rizky Pratama</strong><span>Pemilik UMKM</span></footer></blockquote></div>
+
+    <!-- ================= HARGA ================= -->
+    <section id="harga" class="pricing-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-label">PAKET FOTOGRAFI</span>
+
+                <h2>
+                    Pilih Paket
+                    <span>Sesuai Kebutuhan</span>
+                </h2>
+
+                <p>
+                    Harga transparan dengan layanan yang jelas.
+                </p>
+
+            </div>
+
+
+            <div class="row justify-content-center g-4 mt-4">
+
+                <!-- Basic -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="pricing-card">
+
+                        <h4>Basic</h4>
+
+                        <p class="pricing-description">
+                            Cocok untuk sesi foto sederhana.
+                        </p>
+
+                        <div class="price">
+                            Rp350K
+                        </div>
+
+                        <ul>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                1 Jam sesi foto
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                1 Fotografer
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                20 Foto edit
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                File digital
+                            </li>
+                        </ul>
+
+                        <a href="#kontak" class="btn btn-outline-gold w-100">
+                            Pilih Paket
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Premium -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="pricing-card featured">
+
+                        <div class="popular-badge">
+                            POPULER
+                        </div>
+
+                        <h4>Premium</h4>
+
+                        <p class="pricing-description">
+                            Pilihan untuk momen spesial.
+                        </p>
+
+                        <div class="price">
+                            Rp750K
+                        </div>
+
+                        <ul>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                3 Jam sesi foto
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                2 Fotografer
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                60 Foto edit
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                File digital
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                10 Foto cetak
+                            </li>
+                        </ul>
+
+                        <a href="#kontak" class="btn btn-gold w-100">
+                            Pilih Paket
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Professional -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="pricing-card">
+
+                        <h4>Professional</h4>
+
+                        <p class="pricing-description">
+                            Untuk event dan kebutuhan besar.
+                        </p>
+
+                        <div class="price">
+                            Rp1.5JT
+                        </div>
+
+                        <ul>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                6 Jam sesi foto
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                2 Fotografer
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                150 Foto edit
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                Semua file digital
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                20 Foto cetak
+                            </li>
+                        </ul>
+
+                        <a href="#kontak" class="btn btn-outline-gold w-100">
+                            Pilih Paket
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="contact-cta" id="kontak"><div><p class="eyebrow">MOMEN ANDA, CERITA KAMI</p><h2>Siap Mengabadikan<br>Momen Anda?</h2><p>Hubungi kami untuk konsultasi dan pemesanan jadwal.</p></div><a class="btn" id="whatsappLink" href="https://wa.me/6281234567890" target="_blank" rel="noopener">Hubungi via WhatsApp ↗</a></section>
-  </main>
-  <footer class="footer"><a class="brand" href="#beranda"><span class="brand-icon">▣</span><span><strong>LensaKita</strong><small>Photography Studio</small></span></a><p>© <span id="year"></span> LensaKita Studio. Dibuat dengan sepenuh hati.</p><a href="#beranda">Kembali ke atas ↑</a></footer>
-  <script src="script.js"></script>
+
+    <!-- ================= TESTIMONI ================= -->
+    <section class="testimonial-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-label">TESTIMONI</span>
+
+                <h2>
+                    Kata Mereka
+                    <span>Tentang LensaKita</span>
+                </h2>
+
+            </div>
+
+
+            <div class="row justify-content-center mt-4">
+
+                <div class="col-lg-8">
+
+                    <div class="testimonial-card text-center">
+
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+
+                        <p class="testimonial-text">
+                            "Hasil fotonya bagus banget dan fotografernya
+                            juga ramah. Selama sesi foto kami jadi lebih
+                            nyaman dan tidak kaku."
+                        </p>
+
+                        <h5>Rizky & Aulia</h5>
+
+                        <span>
+                            Wedding Session
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section">
+
+        <div class="container text-center">
+
+            <span class="section-label">
+                SIAP MENGABADIKAN MOMEN?
+            </span>
+
+            <h2>
+                Mari buat cerita Anda
+                <span>menjadi kenangan.</span>
+            </h2>
+
+            <p>
+                Hubungi kami untuk konsultasi dan booking sesi fotografi.
+            </p>
+
+            <a href="#kontak" class="btn btn-gold btn-lg">
+                Hubungi LensaKita
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= KONTAK ================= -->
+    <section id="kontak" class="contact-section section-padding">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <div class="col-lg-5">
+
+                    <span class="section-label">KONTAK</span>
+
+                    <h2>
+                        Mari ngobrol tentang
+                        <span>momen Anda.</span>
+                    </h2>
+
+                    <p>
+                        Punya pertanyaan atau ingin melakukan booking?
+                        Hubungi kami melalui informasi berikut.
+                    </p>
+
+
+                    <div class="contact-info">
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+
+                            <div>
+                                <small>WhatsApp</small>
+                                <p>0812-3456-7890</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+
+                            <div>
+                                <small>Email</small>
+                                <p>hello@lensakita.id</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+
+                            <div>
+                                <small>Lokasi</small>
+                                <p>Bandung, Jawa Barat</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-7">
+
+                    <form id="contactForm" class="contact-form">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+
+                                <label for="name">
+                                    Nama
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="form-control"
+                                    placeholder="Nama Anda"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="phone">
+                                    No. WhatsApp
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    class="form-control"
+                                    placeholder="08xxxxxxxxxx"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="service">
+                                    Layanan
+                                </label>
+
+                                <select
+                                    id="service"
+                                    class="form-select"
+                                    required
+                                >
+                                    <option value="">
+                                        Pilih layanan
+                                    </option>
+
+                                    <option value="Wedding">
+                                        Wedding
+                                    </option>
+
+                                    <option value="Portrait">
+                                        Portrait
+                                    </option>
+
+                                    <option value="Product">
+                                        Product
+                                    </option>
+
+                                    <option value="Event">
+                                        Event
+                                    </option>
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="message">
+                                    Pesan
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Ceritakan kebutuhan fotografi Anda..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-gold w-100"
+                                >
+                                    Kirim Pesan
+                                    <i class="bi bi-send"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+
+                    <h4>
+                        <i class="bi bi-camera-fill"></i>
+                        LensaKita
+                    </h4>
+
+                    <p>
+                        Mengabadikan cerita dalam setiap frame.
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-6 text-md-end">
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+
+            <div class="text-center">
+
+                <small>
+                    © <span id="year"></span> LensaKita Studio.
+                    All Rights Reserved.
+                </small>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
 </body>
 </html>
+```
