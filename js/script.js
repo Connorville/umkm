@@ -91,6 +91,36 @@ navLinks.forEach(function (link) {
 
 
 /* =========================================
+   PORTFOLIO IMAGE PREVIEW
+========================================= */
+
+const galleryItems = document.querySelectorAll(".gallery-item");
+const modalImage = document.getElementById("modalImage");
+const imageModalElement = document.getElementById("imageModal");
+
+const imageModal = new bootstrap.Modal(imageModalElement);
+
+galleryItems.forEach(function (item) {
+
+    item.addEventListener("click", function () {
+
+        const image = item.querySelector("img");
+
+        if (image) {
+
+            modalImage.src = image.src;
+            modalImage.alt = image.alt;
+
+            imageModal.show();
+
+        }
+
+    });
+
+});
+
+
+/* =========================================
    SIMPLE REVEAL ANIMATION
 ========================================= */
 

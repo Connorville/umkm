@@ -753,3 +753,41 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* =========================================
+   IMAGE PREVIEW MODAL
+========================================= */
+
+.image-modal-content {
+    background: transparent;
+    border: none;
+    position: relative;
+}
+
+.image-modal-content .modal-body {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-modal-content img {
+    max-height: 85vh;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.image-modal-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    opacity: 1;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 8px;
+}
