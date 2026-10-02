@@ -46,7 +46,7 @@ contactForm.addEventListener("submit", function (event) {
         Format: 628xxxxxxxxxx
     */
 
-    const whatsappNumber = "6281234567890";
+    const whatsappNumber = "6289677002345";
 
     const whatsappMessage =
         `Halo LensaKita Studio,%0A%0A` +
