@@ -791,3 +791,97 @@ section {
     border-radius: 50%;
     padding: 8px;
 }
+
+/* =========================================
+   FAQ
+========================================= */
+
+#faq {
+    background-color: var(--dark-soft);
+}
+
+#faq .section-title {
+    margin-bottom: 50px;
+}
+
+/* Judul Kecil (Subtitle FAQ) */
+#faq .section-subtitle {
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Judul Utama FAQ */
+#faq .section-title h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+/* Deskripsi Singkat FAQ */
+#faq .section-title p {
+    color: var(--gray);
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container Item Accordion */
+.accordion-item {
+    background-color: var(--dark-card);
+    border: 1px solid var(--border);
+    margin-bottom: 15px;
+    border-radius: 8px !important;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.accordion-item:hover {
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+/* Tombol Pertanyaan FAQ */
+.accordion-button {
+    background-color: var(--dark-card);
+    color: var(--white);
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    box-shadow: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Saat Pertanyaan Ditekan / Terbuka */
+.accordion-button:not(.collapsed) {
+    background-color: var(--dark-card);
+    color: var(--gold);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* Mengubah warna panah accordion menjadi putih/gold */
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: invert(72%) sepia(51%) saturate(543%) hue-rotate(9deg) brightness(92%) contrast(88%);
+}
+
+/* Isi Jawaban FAQ */
+.accordion-body {
+    background-color: var(--dark-card);
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    padding: 0 25px 22px;
+}

@@ -125,7 +125,7 @@ galleryItems.forEach(function (item) {
 ========================================= */
 
 const revealElements = document.querySelectorAll(
-    ".service-card, .pricing-card, .gallery-item, .testimonial-card"
+    ".service-card, .pricing-card, .gallery-item, .testimonial-card, .accordion, .section-title"
 );
 
 const observer = new IntersectionObserver(
